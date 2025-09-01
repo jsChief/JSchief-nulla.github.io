@@ -1,0 +1,26 @@
+.flower {
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.6;
+            animation: gentle-float 4s ease-in-out infinite;
+        }
+
+        .flower:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+        .flower:nth-child(2) { top: 20%; right: 10%; animation-delay: 1s; }
+        .flower:nth-child(3) { bottom: 25%; left: 10%; animation-delay: 2s; }
+        .flower:nth-child(4) { bottom: 15%; right: 20%; animation-delay: 0.5s; }
+        .flower:nth-child(5) { top: 60%; left: 5%; animation-delay: 1.5s; }
+        .flower:nth-child(6) { top: 50%; right: 5%; animation-delay: 2.5s; }
+
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+            50% { transform: translateY(-8px) rotate(5deg); opacity: 0.8; }
+        }
+        
+        .gentle-pulse {
+            animation: gentle-pulse 4s ease-in-out infinite;
+        }
+        
+       @keyframes gentle-pulse {
+           0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+       }
