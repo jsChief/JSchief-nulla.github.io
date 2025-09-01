@@ -1,0 +1,79 @@
+    @font-face {
+  font-family: "nunito";
+  src: url("Nunito-Regular.ttf");
+}
+    @font-face {
+  font-family: "nunito-bold";
+  src: url("Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("./BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "lilita";
+  src: url("./LilitaOne-Regular.ttf");
+}
+
+.text-bb {
+  font-family: bebas
+}
+
+.text-lt {
+  font-family: lilita
+}
+
+.text-mr {
+font-family: mr
+}
+
+.text-nr {
+font-family: nunito
+}
+
+.text-pp {
+font-family: poppins
+}
+.text-nb {
+font-family: nunito-bold
+}
+
+.noDisp {
+  display: none;
+}
+
+*{
+user-select: none;
+}
+
+button, a, input {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    /*
+    -webkit-tap-highlight-color: rgba(255,255,255,0.2);*/
+}
+
+.imgSpin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
